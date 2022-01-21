@@ -1,2 +1,2 @@
-# DWI-Tailwind
- Repo for DWI learning Tailwind
+# DIW-Tailwind
+ Repo for DIW learning Tailwind
