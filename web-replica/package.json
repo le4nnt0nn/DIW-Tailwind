@@ -1,0 +1,15 @@
+{
+  "name": "web-replica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx taildwindcss build ./src/styles.css -o ./css/styles.css"
+  },
+  "keywords": [],
+  "author": "Antonio Cortés",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
