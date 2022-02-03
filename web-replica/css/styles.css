@@ -32078,6 +32078,76 @@ video {
   }
 }
 
+@-webkit-keyframes backBanner {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -200px -200px;
+  }
+}
+
+@keyframes backBanner {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -200px -200px;
+  }
+}
+
+@-webkit-keyframes showText {
+  0% {
+    transform: translate(-600%) scale(5,5);
+  }
+
+  50% {
+    transform: translate(600%) scale(5,5);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-600%);
+    drop-shadow: none;
+    color: transparent;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%) scale(1,1);
+    drop-shadow: drop-shadow-md;
+    color: white;
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  0% {
+    transform: translate(-600%) scale(5,5);
+  }
+
+  50% {
+    transform: translate(600%) scale(5,5);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-600%);
+    drop-shadow: none;
+    color: transparent;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%) scale(1,1);
+    drop-shadow: drop-shadow-md;
+    color: white;
+    opacity: 1;
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -32121,6 +32191,16 @@ video {
 .animate-showDescriptionCard {
   -webkit-animation: showDescription 400ms linear;
           animation: showDescription 400ms linear;
+}
+
+.animate-backBannerBan {
+  -webkit-animation: backBanner 10s linear;
+          animation: backBanner 10s linear;
+}
+
+.animate-showTextBan {
+  -webkit-animation: showText 10s linear;
+          animation: showText 10s linear;
 }
 
 .hover\:animate-none:hover {
@@ -32168,6 +32248,16 @@ video {
           animation: showDescription 400ms linear;
 }
 
+.hover\:animate-backBannerBan:hover {
+  -webkit-animation: backBanner 10s linear;
+          animation: backBanner 10s linear;
+}
+
+.hover\:animate-showTextBan:hover {
+  -webkit-animation: showText 10s linear;
+          animation: showText 10s linear;
+}
+
 .group:hover .group-hover\:animate-none {
   -webkit-animation: none;
           animation: none;
@@ -32211,6 +32301,16 @@ video {
 .group:hover .group-hover\:animate-showDescriptionCard {
   -webkit-animation: showDescription 400ms linear;
           animation: showDescription 400ms linear;
+}
+
+.group:hover .group-hover\:animate-backBannerBan {
+  -webkit-animation: backBanner 10s linear;
+          animation: backBanner 10s linear;
+}
+
+.group:hover .group-hover\:animate-showTextBan {
+  -webkit-animation: showText 10s linear;
+          animation: showText 10s linear;
 }
 
 @font-face {
@@ -63511,6 +63611,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .sm\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .sm\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .sm\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -63556,6 +63666,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .sm\:hover\:animate-backBannerBan:hover {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .sm\:hover\:animate-showTextBan:hover {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .group:hover .sm\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -63599,6 +63719,16 @@ video {
   .group:hover .sm\:group-hover\:animate-showDescriptionCard {
     -webkit-animation: showDescription 400ms linear;
             animation: showDescription 400ms linear;
+  }
+
+  .group:hover .sm\:group-hover\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .group:hover .sm\:group-hover\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
   }
 }
 
@@ -94864,6 +94994,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .md\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .md\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .md\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -94909,6 +95049,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .md\:hover\:animate-backBannerBan:hover {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .md\:hover\:animate-showTextBan:hover {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .group:hover .md\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -94952,6 +95102,16 @@ video {
   .group:hover .md\:group-hover\:animate-showDescriptionCard {
     -webkit-animation: showDescription 400ms linear;
             animation: showDescription 400ms linear;
+  }
+
+  .group:hover .md\:group-hover\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .group:hover .md\:group-hover\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
   }
 }
 
@@ -126217,6 +126377,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .lg\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .lg\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .lg\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -126262,6 +126432,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .lg\:hover\:animate-backBannerBan:hover {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .lg\:hover\:animate-showTextBan:hover {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .group:hover .lg\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -126305,6 +126485,16 @@ video {
   .group:hover .lg\:group-hover\:animate-showDescriptionCard {
     -webkit-animation: showDescription 400ms linear;
             animation: showDescription 400ms linear;
+  }
+
+  .group:hover .lg\:group-hover\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .group:hover .lg\:group-hover\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
   }
 }
 
@@ -157570,6 +157760,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .xl\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .xl\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .xl\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -157615,6 +157815,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .xl\:hover\:animate-backBannerBan:hover {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .xl\:hover\:animate-showTextBan:hover {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .group:hover .xl\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -157658,6 +157868,16 @@ video {
   .group:hover .xl\:group-hover\:animate-showDescriptionCard {
     -webkit-animation: showDescription 400ms linear;
             animation: showDescription 400ms linear;
+  }
+
+  .group:hover .xl\:group-hover\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .group:hover .xl\:group-hover\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
   }
 }
 
@@ -188923,6 +189143,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .\32xl\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .\32xl\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .\32xl\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -188968,6 +189198,16 @@ video {
             animation: showDescription 400ms linear;
   }
 
+  .\32xl\:hover\:animate-backBannerBan:hover {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .\32xl\:hover\:animate-showTextBan:hover {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
+  }
+
   .group:hover .\32xl\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -189011,5 +189251,15 @@ video {
   .group:hover .\32xl\:group-hover\:animate-showDescriptionCard {
     -webkit-animation: showDescription 400ms linear;
             animation: showDescription 400ms linear;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-backBannerBan {
+    -webkit-animation: backBanner 10s linear;
+            animation: backBanner 10s linear;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-showTextBan {
+    -webkit-animation: showText 10s linear;
+            animation: showText 10s linear;
   }
 }
