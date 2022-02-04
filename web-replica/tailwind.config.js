@@ -7,16 +7,16 @@ module.exports = {
               '50%': { transform: 'translate(200%)'},
             },
             showIcon: {
-              'from': { transform: 'translate(-200%)' },
-              'to': { transform: 'translate(0%)' }
+              'from': { transform: 'translateY(-200%)' },
+              'to': { transform: 'translateY(0%)' }
             },
             showCategory: {
-              'from': { transform: 'translate(-300%)', color: 'black' },
-              'to': { transform: 'translate(0%)', color: 'white' }
+              'from': { transform: 'translateY(-300%)', color: 'black' },
+              'to': { transform: 'translateY(0%)', color: 'white' }
             },
             showDescription: {
-              'from': { transform: 'translate(-300%)', color: 'black' },
-              'to': { transform: 'translate(0%)' }
+              'from': { transform: 'translateX(-300%)', color: 'black' },
+              'to': { transform: 'translateX(0%)' }
             },
             backBanner: {
               '0%': { backgroundPosition: '0px 0px' },
@@ -39,7 +39,8 @@ module.exports = {
           },
           backgroundImage: theme => ({
               'pattern': "url('../img/pattern.png')",
-              'banner': "url(../img/bakbaner.png)"
+              'banner': "url(../img/bakbaner.png)",
+              'lateral':"url('../img/pxgray.png')"
           }),
           fontFamily: {
             symbols: ['WebSymbolsRegular'],
@@ -55,13 +56,18 @@ module.exports = {
           },
           width: {
             'wrapper':'1250px',
+            'articles':'860px'
           },
           margin: {
             'wrapper':'0px auto',
           },
           lineHeight: {
             'menu': '70px',
-            'icon': '110px'
+            'icon': '110px',
+            'h3': '45px'
+          },
+          MinHeight: {
+            'lateral': '1200px',
           }
       },
     },

@@ -157,5 +157,276 @@
     text-white
     animate-showDescriptionCard
   }
+
+  .lateral {
+    font-family: 'TrebuchetMS';
+    min-height: 1200px;
+    @apply
+    w-72
+    float-right
+    m-5
+  }
+
+  .lateral h3 {
+    @apply
+    bg-lateral
+    block
+    w-auto
+    h-12
+    leading-10
+    shadow-md
+    text-3xl
+    font-bebas
+    font-normal
+    tracking-widest
+    pl-4
+    mt-8
+    mb-4
+  }
+
+  .lateral h3:first-child {
+    @apply
+    mt-0
+  }
+
+  .search {
+    @apply
+    w-11/12
+    h-8
+    m-3
+    bg-white
+    rounded-md
+    shadow-md
+  }
+
+  .lateral input[type="text"] {
+    transition-duration: 300ms;
+    @apply
+    w-4/5
+    h-8
+    border-none
+    pl-1
+    rounded
+    bg-transparent
+    text-white
+    transition-all
+  }
+
+  .lateral input[type="text"]:focus {
+    @apply
+    text-gray-600
+  }
+
+  .lateral input[type="button"],
+  .lateral input[type="submit"] {
+    @apply
+    h-8
+    cursor-pointer
+    text-base
+    bg-transparent
+    border-none
+    border-l-2
+    text-gray-500
+    pl-1
+  }
+
+  .aside-box {
+    @apply
+    w-4/5
+    h-60
+    m-auto
+    mt-5
+    pt-1
+    shadow-md
+  }
+
+  .login input[type="email"],
+  .login input[type="password"] {
+    @apply
+    block
+    m-auto
+    mt-5
+    w-4/5
+    h-8
+    border-2
+    shadow-md
+    rounded-md
+    pl-8
+    text-gray-500
+  }
+
+  .login input[type="email"]:focus,
+  .login input[type="password"]:focus {
+    @apply
+    text-gray-700
+    shadow-md
+  }
+
+  .login .user,
+  .login .password {
+    @apply
+    block
+    text-center
+    absolute
+    ml-4
+    mt-1
+    h-8
+  }
+
+  .login .password {
+    @apply
+    ml-5
+    mt-6
+    text-xl
+  }
+
+  .login input[type="submit"],
+  .login input[type="button"],
+  .login input[type="reset"],
+  .login button {
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    font-family: "TrebuchetMS";
+    transition-duration: 300ms;
+    @apply
+    text-center
+    w-24
+    h-9
+    mt-5
+    border-2
+    rounded-none
+    cursor-pointer
+    text-sm
+    font-extralight
+    ml-4
+    mb-5
+    transition-all
+  }
   
+  .login input[type="submit"]:hover,
+  .login input[type="button"]:hover,
+  .login input[type="reset"]:hover,
+  .login button:hover {
+    @apply 
+    shadow-sm
+  }
+
+  .login a {
+    text-decoration: none;
+    @apply
+    block
+    text-sm
+    ml-5
+    text-gray-600
+  }
+
+  .login a:hover {
+    color:#2f78bc;
+    @apply
+    underline
+  }
+
+  .social {
+    @apply
+    h-48
+  }
+
+  .social a {
+    @apply
+    block
+    text-gray-500
+    no-underline
+    text-3xl
+    ml-5
+    mt-3
+    mb-5
+  }
+
+  .social .overlay {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 1px #ccc;
+    transition-duration: 400ms;
+    @apply
+    block
+    h-5
+    font-bold
+    tracking-wider
+    shadow-md
+    border-4
+    bg-white
+    absolute
+    p-1
+    ml-16
+    -mt-14
+    transform -translate-x-20
+    opacity-0
+    transition-all
+  }
+
+  .social div:hover .overlay {
+    @apply
+    opacity-100
+    transform translate-x-0
+  }
+
+  .articles {
+    @apply
+    w-articles
+    float-left
+  }
+
+  .articles h2 {
+    background: url('../img/pxgray.png');
+    line-height: 75px;
+    @apply
+    block
+    w-full
+    h-20
+    text-center
+    font-bebas
+    text-4xl
+    font-normal
+    tracking-wider
+    bg-white
+    shadow-md
+    m-auto
+    mt-5
+    mb-4
+  }
+
+  .articles article {
+    @apply
+    w-11/12
+    h-auto
+    border-2
+    border-white
+    m-10
+    bg-white
+    text-black
+    shadow-md
+  }
+
+  .articles article h4 a {
+    color: #00538c;
+    @apply
+    no-underline
+  }
+
+  .articles article h4 a:hover {
+    @apply
+    underline
+  }
+
+  .articles .data {
+    background: #393d3f;
+    @apply
+    float-right
+    text-white
+    h-8
+    leading-9
+    -m-3
+    p-1
+    text-sm
+    rounded-md
+  }
+
 }
