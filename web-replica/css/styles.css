@@ -585,11 +585,86 @@ video {
   }
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .navText {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.clearfix {
+  float: none;
+  clear: both
+}
+
+.logo {
+  background-color: #37bcf9;
+  cursor: pointer;
+  float: left;
+  font-family: BebasNeue;
+  margin-top: 0.5rem;
+  margin-left: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 0.1em;
+  width: 13rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms
+}
+
+.logo:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.125rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity))
+}
+
+.gear {
+  font-family: WebSymbolsRegular
+}
+
+.logo .gear {
+  display: block;
+  float: left;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 0.25rem;
+  margin-left: 1.5rem;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite
+}
+
+.logo h3 {
+  display: block;
+  float: right;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-top: 0.25rem;
+  margin-right: 4rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms
+}
+
+.logo:hover .gear {
+  -webkit-animation: fromBellow 500ms linear;
+          animation: fromBellow 500ms linear
+}
+
+.logo:hover h3 {
+  -webkit-animation: fromRight 300ms linear;
+          animation: fromRight 300ms linear
 }
 
 .menu {
@@ -1023,6 +1098,157 @@ video {
   padding: 0.25rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+.articles .adata span {
+  margin: 0.25rem
+}
+
+.articles article p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.blog {
+  transition-duration: 1s;
+  height: 6rem;
+  line-height: 100px;
+  margin-top: 4rem;
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.blog a {
+  transition-duration: 1s;
+  color: #00538c;
+  display: block;
+  font-family: BebasNeue;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.blog:hover {
+  border-radius: 240px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  -webkit-animation: blink 10s infinite linear;
+          animation: blink 10s infinite linear
+}
+
+.blog:hover a {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+.footer {
+  height: 470px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  overflow-y: hidden;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%
+}
+
+.footer .wrap > div {
+  font-family: "TrebuchetMS";
+  float: left;
+  height: 24rem;
+  margin: 2.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 20rem
+}
+
+.footer a {
+  color: #37bcf9;
+  text-decoration: none;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms
+}
+
+.footer h5 {
+  background: url('../img/pxgray.png');
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  display: block;
+  font-family: BebasNeue;
+  height: 3rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  letter-spacing: 0.1em
+}
+
+.footer ul {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1.25rem;
+  text-align: left
+}
+
+.footer ul li {
+  border-bottom-width: 2px;
+  margin-top: 0.5rem;
+  padding: 0.25rem
+}
+
+.footer ul li a {
+  display: block;
+  height: 2.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms
+}
+
+.footer ul li:hover a {
+  padding-left: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%
+}
+
+.footer iframe {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-radius: 0.375rem;
+  border-width: 4px;
+  height: 18rem;
+  margin-top: 0.5rem;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 100%
+}
+
+.footer img {
+  margin-bottom: 1rem
+}
+
+.footer .browsers img {
+  display: inline-block;
+  width: 2.75rem
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -12210,6 +12436,10 @@ video {
   height: 70px;
 }
 
+.h-footerWrap {
+  height: 370px;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -12471,6 +12701,10 @@ video {
 
 .leading-h3 {
   line-height: 45px;
+}
+
+.leading-blog {
+  line-height: 100px;
 }
 
 .list-inside {
@@ -32300,21 +32534,41 @@ video {
 
 @-webkit-keyframes fromBellow {
   0%, 100% {
-    transform: translate(0%);
+    transform: translateY(0%);
   }
 
   50% {
-    transform: translate(200%);
+    transform: translateY(200%);
   }
 }
 
 @keyframes fromBellow {
   0%, 100% {
-    transform: translate(0%);
+    transform: translateY(0%);
   }
 
   50% {
-    transform: translate(200%);
+    transform: translateY(200%);
+  }
+}
+
+@-webkit-keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }
 
@@ -32454,6 +32708,50 @@ video {
   }
 }
 
+@-webkit-keyframes blink {
+  0% {
+    border: 10px solid #37bcf9;
+  }
+
+  25% {
+    border: 10px solid green;
+  }
+
+  50% {
+    border: 10px solid yellow;
+  }
+
+  75% {
+    border: 10px solid white;
+  }
+
+  100% {
+    border: 10px solid #37bcf9;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border: 10px solid #37bcf9;
+  }
+
+  25% {
+    border: 10px solid green;
+  }
+
+  50% {
+    border: 10px solid yellow;
+  }
+
+  75% {
+    border: 10px solid white;
+  }
+
+  100% {
+    border: 10px solid #37bcf9;
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -32477,6 +32775,16 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-fromBellowLogo {
+  -webkit-animation: fromBellow 500ms linear;
+          animation: fromBellow 500ms linear;
+}
+
+.animate-fromRightLogo {
+  -webkit-animation: fromRight 300ms linear;
+          animation: fromRight 300ms linear;
 }
 
 .animate-rotateGear {
@@ -32509,6 +32817,11 @@ video {
           animation: showText 10s linear;
 }
 
+.animate-blinkBlog {
+  -webkit-animation: blink 10s infinite linear;
+          animation: blink 10s infinite linear;
+}
+
 .hover\:animate-none:hover {
   -webkit-animation: none;
           animation: none;
@@ -32532,6 +32845,16 @@ video {
 .hover\:animate-bounce:hover {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.hover\:animate-fromBellowLogo:hover {
+  -webkit-animation: fromBellow 500ms linear;
+          animation: fromBellow 500ms linear;
+}
+
+.hover\:animate-fromRightLogo:hover {
+  -webkit-animation: fromRight 300ms linear;
+          animation: fromRight 300ms linear;
 }
 
 .hover\:animate-rotateGear:hover {
@@ -32564,6 +32887,11 @@ video {
           animation: showText 10s linear;
 }
 
+.hover\:animate-blinkBlog:hover {
+  -webkit-animation: blink 10s infinite linear;
+          animation: blink 10s infinite linear;
+}
+
 .group:hover .group-hover\:animate-none {
   -webkit-animation: none;
           animation: none;
@@ -32587,6 +32915,16 @@ video {
 .group:hover .group-hover\:animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.group:hover .group-hover\:animate-fromBellowLogo {
+  -webkit-animation: fromBellow 500ms linear;
+          animation: fromBellow 500ms linear;
+}
+
+.group:hover .group-hover\:animate-fromRightLogo {
+  -webkit-animation: fromRight 300ms linear;
+          animation: fromRight 300ms linear;
 }
 
 .group:hover .group-hover\:animate-rotateGear {
@@ -32617,6 +32955,11 @@ video {
 .group:hover .group-hover\:animate-showTextBan {
   -webkit-animation: showText 10s linear;
           animation: showText 10s linear;
+}
+
+.group:hover .group-hover\:animate-blinkBlog {
+  -webkit-animation: blink 10s infinite linear;
+          animation: blink 10s infinite linear;
 }
 
 @font-face {
@@ -43875,6 +44218,10 @@ video {
     height: 70px;
   }
 
+  .sm\:h-footerWrap {
+    height: 370px;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -44136,6 +44483,10 @@ video {
 
   .sm\:leading-h3 {
     line-height: 45px;
+  }
+
+  .sm\:leading-blog {
+    line-height: 100px;
   }
 
   .sm\:list-inside {
@@ -63909,6 +64260,16 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .sm\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .sm\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
+  }
+
   .sm\:animate-rotateGear {
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
@@ -63939,6 +64300,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .sm\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .sm\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -63962,6 +64328,16 @@ video {
   .sm\:hover\:animate-bounce:hover {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .sm\:hover\:animate-fromBellowLogo:hover {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .sm\:hover\:animate-fromRightLogo:hover {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .sm\:hover\:animate-rotateGear:hover {
@@ -63994,6 +64370,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .sm\:hover\:animate-blinkBlog:hover {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .group:hover .sm\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -64017,6 +64398,16 @@ video {
   .group:hover .sm\:group-hover\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .group:hover .sm\:group-hover\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .group:hover .sm\:group-hover\:animate-rotateGear {
@@ -64047,6 +64438,11 @@ video {
   .group:hover .sm\:group-hover\:animate-showTextBan {
     -webkit-animation: showText 10s linear;
             animation: showText 10s linear;
+  }
+
+  .group:hover .sm\:group-hover\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
   }
 }
 
@@ -75270,6 +75666,10 @@ video {
     height: 70px;
   }
 
+  .md\:h-footerWrap {
+    height: 370px;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -75531,6 +75931,10 @@ video {
 
   .md\:leading-h3 {
     line-height: 45px;
+  }
+
+  .md\:leading-blog {
+    line-height: 100px;
   }
 
   .md\:list-inside {
@@ -95304,6 +95708,16 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .md\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .md\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
+  }
+
   .md\:animate-rotateGear {
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
@@ -95334,6 +95748,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .md\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .md\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -95357,6 +95776,16 @@ video {
   .md\:hover\:animate-bounce:hover {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .md\:hover\:animate-fromBellowLogo:hover {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .md\:hover\:animate-fromRightLogo:hover {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .md\:hover\:animate-rotateGear:hover {
@@ -95389,6 +95818,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .md\:hover\:animate-blinkBlog:hover {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .group:hover .md\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -95412,6 +95846,16 @@ video {
   .group:hover .md\:group-hover\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .group:hover .md\:group-hover\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .group:hover .md\:group-hover\:animate-rotateGear {
@@ -95442,6 +95886,11 @@ video {
   .group:hover .md\:group-hover\:animate-showTextBan {
     -webkit-animation: showText 10s linear;
             animation: showText 10s linear;
+  }
+
+  .group:hover .md\:group-hover\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
   }
 }
 
@@ -106665,6 +107114,10 @@ video {
     height: 70px;
   }
 
+  .lg\:h-footerWrap {
+    height: 370px;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -106926,6 +107379,10 @@ video {
 
   .lg\:leading-h3 {
     line-height: 45px;
+  }
+
+  .lg\:leading-blog {
+    line-height: 100px;
   }
 
   .lg\:list-inside {
@@ -126699,6 +127156,16 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .lg\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .lg\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
+  }
+
   .lg\:animate-rotateGear {
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
@@ -126729,6 +127196,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .lg\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .lg\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -126752,6 +127224,16 @@ video {
   .lg\:hover\:animate-bounce:hover {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .lg\:hover\:animate-fromBellowLogo:hover {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .lg\:hover\:animate-fromRightLogo:hover {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .lg\:hover\:animate-rotateGear:hover {
@@ -126784,6 +127266,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .lg\:hover\:animate-blinkBlog:hover {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .group:hover .lg\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -126807,6 +127294,16 @@ video {
   .group:hover .lg\:group-hover\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .group:hover .lg\:group-hover\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .group:hover .lg\:group-hover\:animate-rotateGear {
@@ -126837,6 +127334,11 @@ video {
   .group:hover .lg\:group-hover\:animate-showTextBan {
     -webkit-animation: showText 10s linear;
             animation: showText 10s linear;
+  }
+
+  .group:hover .lg\:group-hover\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
   }
 }
 
@@ -138060,6 +138562,10 @@ video {
     height: 70px;
   }
 
+  .xl\:h-footerWrap {
+    height: 370px;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -138321,6 +138827,10 @@ video {
 
   .xl\:leading-h3 {
     line-height: 45px;
+  }
+
+  .xl\:leading-blog {
+    line-height: 100px;
   }
 
   .xl\:list-inside {
@@ -158094,6 +158604,16 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .xl\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .xl\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
+  }
+
   .xl\:animate-rotateGear {
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
@@ -158124,6 +158644,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .xl\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .xl\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -158147,6 +158672,16 @@ video {
   .xl\:hover\:animate-bounce:hover {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .xl\:hover\:animate-fromBellowLogo:hover {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .xl\:hover\:animate-fromRightLogo:hover {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .xl\:hover\:animate-rotateGear:hover {
@@ -158179,6 +158714,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .xl\:hover\:animate-blinkBlog:hover {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .group:hover .xl\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -158202,6 +158742,16 @@ video {
   .group:hover .xl\:group-hover\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .group:hover .xl\:group-hover\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .group:hover .xl\:group-hover\:animate-rotateGear {
@@ -158232,6 +158782,11 @@ video {
   .group:hover .xl\:group-hover\:animate-showTextBan {
     -webkit-animation: showText 10s linear;
             animation: showText 10s linear;
+  }
+
+  .group:hover .xl\:group-hover\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
   }
 }
 
@@ -169455,6 +170010,10 @@ video {
     height: 70px;
   }
 
+  .\32xl\:h-footerWrap {
+    height: 370px;
+  }
+
   .\32xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -169716,6 +170275,10 @@ video {
 
   .\32xl\:leading-h3 {
     line-height: 45px;
+  }
+
+  .\32xl\:leading-blog {
+    line-height: 100px;
   }
 
   .\32xl\:list-inside {
@@ -189489,6 +190052,16 @@ video {
             animation: bounce 1s infinite;
   }
 
+  .\32xl\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .\32xl\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
+  }
+
   .\32xl\:animate-rotateGear {
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
@@ -189519,6 +190092,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .\32xl\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .\32xl\:hover\:animate-none:hover {
     -webkit-animation: none;
             animation: none;
@@ -189542,6 +190120,16 @@ video {
   .\32xl\:hover\:animate-bounce:hover {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:hover\:animate-fromBellowLogo:hover {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .\32xl\:hover\:animate-fromRightLogo:hover {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .\32xl\:hover\:animate-rotateGear:hover {
@@ -189574,6 +190162,11 @@ video {
             animation: showText 10s linear;
   }
 
+  .\32xl\:hover\:animate-blinkBlog:hover {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
+  }
+
   .group:hover .\32xl\:group-hover\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -189597,6 +190190,16 @@ video {
   .group:hover .\32xl\:group-hover\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-fromBellowLogo {
+    -webkit-animation: fromBellow 500ms linear;
+            animation: fromBellow 500ms linear;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-fromRightLogo {
+    -webkit-animation: fromRight 300ms linear;
+            animation: fromRight 300ms linear;
   }
 
   .group:hover .\32xl\:group-hover\:animate-rotateGear {
@@ -189627,5 +190230,10 @@ video {
   .group:hover .\32xl\:group-hover\:animate-showTextBan {
     -webkit-animation: showText 10s linear;
             animation: showText 10s linear;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-blinkBlog {
+    -webkit-animation: blink 10s infinite linear;
+            animation: blink 10s infinite linear;
   }
 }

@@ -30,10 +30,80 @@
 
 @layer components {
 
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .navText {
     @apply
     text-base
     text-white;
+  }
+
+  .clearfix {
+    @apply
+    float-none
+    clear-both
+  }
+
+  .logo {
+    background-color: #37bcf9;
+    @apply
+    font-bebas
+    float-left
+    w-52
+    text-center
+    mt-2
+    ml-5
+    tracking-widest
+    cursor-pointer
+    overflow-hidden
+    transition-all duration-300
+  }
+
+  .logo:hover {
+    @apply
+    rounded-sm
+    text-black
+    bg-white
+  }
+
+  .gear {
+    @apply
+    font-symbols
+  }
+
+  .logo .gear {
+    @apply
+    font-bold
+    block
+    float-left
+    text-3xl
+    mt-1
+    ml-6
+    animate-rotateGear
+  }
+
+  .logo h3 {
+    @apply
+    font-bold
+    block
+    float-right
+    text-4xl
+    mt-1
+    mr-16
+    transition-all duration-300
+  }
+
+  .logo:hover .gear {
+    @apply
+    animate-fromBellowLogo
+  }
+
+  .logo:hover h3 {
+    @apply
+    animate-fromRightLogo
   }
 
   .menu {
@@ -428,5 +498,147 @@
     text-sm
     rounded-md
   }
+
+  .articles .adata span {
+    @apply
+    m-1
+  }
+
+  .articles article p {
+    @apply
+    mt-2
+    mb-2
+    text-sm
+  }
+
+  .blog {
+    transition-duration: 1s;
+    @apply
+    h-24
+    mt-16
+    leading-blog
+    text-center
+    transition-all
+  }
+
+  .blog a {
+    transition-duration: 1s;
+    color: #00538c;
+    @apply
+    block
+    font-bebas
+    text-4xl
+    tracking-widest
+    no-underline
+    transition-all
+  }
+
+  .blog:hover {
+    border-radius: 240px;
+    @apply
+    bg-gray-600
+    shadow-lg
+    animate-blinkBlog
+  }
+
+  .blog:hover a {
+    @apply
+    text-white
+    shadow-lg
+  }
+
+  .footer {
+    height: 470px;
+    @apply
+    w-full
+    bg-black
+    text-white
+    overflow-y-hidden
+  }
+
+  .footer .wrap > div {
+    font-family: "TrebuchetMS";
+    @apply
+    float-left
+    w-80
+    h-96
+    m-10
+    text-center
+    text-white
+  }
+
+  .footer a {
+    color: #37bcf9;
+    @apply
+    no-underline
+    transition-all duration-300
+  }
+
+  .footer h5 {
+    background: url('../img/pxgray.png');
+    @apply
+    block
+    bg-white
+    text-black
+    h-12
+    tracking-widest
+    text-center
+    font-bebas
+    text-4xl
+    leading-10
+    rounded-md
+    mb-4
+  }
+
+  .footer ul {
+    @apply
+    text-left
+    m-5
+    text-2xl
+  }
+
+  .footer ul li {
+    @apply
+    mt-2
+    p-1
+    border-b-2
+  }
+
+  .footer ul li a {
+    @apply
+    block
+    h-10
+    transition-all duration-300
+  }
+
+  .footer ul li:hover a {
+    @apply
+    pl-10
+    text-white
+    w-full
+  }
+
+  .footer iframe {
+    @apply
+    w-full
+    h-72
+    mt-2
+    rounded-md
+    border-4
+    border-white
+    shadow-lg
+  }
+
+  .footer img {
+    @apply
+    mb-4
+  }
+
+  .footer .browsers img {
+    @apply
+    inline-block
+    w-11
+  }
+
 
 }
