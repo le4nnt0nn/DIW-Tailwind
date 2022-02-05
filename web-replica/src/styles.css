@@ -307,7 +307,8 @@
 
   .aside-box {
     @apply
-    w-4/5
+    bg-white
+    w-asideBox
     h-60
     m-auto
     mt-5
@@ -321,7 +322,7 @@
     block
     m-auto
     mt-5
-    w-4/5
+    w-11/12
     h-8
     border-2
     shadow-md
@@ -363,11 +364,11 @@
     font-family: "TrebuchetMS";
     transition-duration: 300ms;
     @apply
+    text-white
     text-center
     w-24
     h-9
     mt-5
-    border-2
     rounded-none
     cursor-pointer
     text-sm
@@ -432,7 +433,7 @@
     p-1
     ml-16
     -mt-14
-    transform -translate-x-20
+    transform -translate-x-3/4
     opacity-0
     transition-all
   }
@@ -526,6 +527,7 @@
   .blog {
     transition-duration: 1s;
     @apply
+    p-8
     h-24
     mt-16
     leading-blog
@@ -597,6 +599,7 @@
     text-center
     font-bebas
     text-4xl
+    font-bold
     leading-10
     rounded-md
     mb-4
@@ -644,6 +647,7 @@
   .footer img {
     @apply
     mb-4
+    text-center
   }
 
   .footer .browsers img {

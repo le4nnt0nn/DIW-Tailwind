@@ -889,13 +889,15 @@ video {
 }
 
 .aside-box {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   height: 15rem;
   margin: auto;
   margin-top: 1.25rem;
   padding-top: 0.25rem;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  width: 80%
+  width: 85%
 }
 
 .login input[type="email"], .login input[type="password"] {
@@ -910,7 +912,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
-  width: 80%;
+  width: 91.666667%;
 }
 
 .login input[type="email"]:focus, .login input[type="password"]:focus {
@@ -947,7 +949,6 @@ video {
 
 .login input[type="submit"], .login input[type="button"], .login input[type="reset"], .login button {
   border-radius: 0px;
-  border-width: 2px;
   cursor: pointer;
   font-weight: 200;
   height: 2.25rem;
@@ -957,6 +958,8 @@ video {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
   width: 6rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1025,7 +1028,7 @@ video {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-translate-x: -5rem;
+  --tw-translate-x: -75%;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
@@ -1131,6 +1134,7 @@ video {
   height: 6rem;
   line-height: 100px;
   margin-top: 4rem;
+  padding: 2rem;
   text-align: center;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1205,6 +1209,7 @@ video {
   border-radius: 0.375rem;
   display: block;
   font-family: BebasNeue;
+  font-weight: 700;
   height: 3rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1258,7 +1263,8 @@ video {
 }
 
 .footer img {
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  text-align: center
 }
 
 .footer .browsers img {
@@ -15154,6 +15160,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-lateral {
+  min-height: 1200px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -28488,6 +28498,10 @@ video {
 
 .w-articles {
   width: 860px;
+}
+
+.w-asideBox {
+  width: 85%;
 }
 
 .z-0 {
@@ -46936,6 +46950,10 @@ video {
     min-height: 100vh;
   }
 
+  .sm\:min-h-lateral {
+    min-height: 1200px;
+  }
+
   .sm\:min-w-0 {
     min-width: 0px;
   }
@@ -60257,6 +60275,10 @@ video {
 
   .sm\:w-articles {
     width: 860px;
+  }
+
+  .sm\:w-asideBox {
+    width: 85%;
   }
 
   .sm\:z-0 {
@@ -78384,6 +78406,10 @@ video {
     min-height: 100vh;
   }
 
+  .md\:min-h-lateral {
+    min-height: 1200px;
+  }
+
   .md\:min-w-0 {
     min-width: 0px;
   }
@@ -91705,6 +91731,10 @@ video {
 
   .md\:w-articles {
     width: 860px;
+  }
+
+  .md\:w-asideBox {
+    width: 85%;
   }
 
   .md\:z-0 {
@@ -109832,6 +109862,10 @@ video {
     min-height: 100vh;
   }
 
+  .lg\:min-h-lateral {
+    min-height: 1200px;
+  }
+
   .lg\:min-w-0 {
     min-width: 0px;
   }
@@ -123153,6 +123187,10 @@ video {
 
   .lg\:w-articles {
     width: 860px;
+  }
+
+  .lg\:w-asideBox {
+    width: 85%;
   }
 
   .lg\:z-0 {
@@ -141280,6 +141318,10 @@ video {
     min-height: 100vh;
   }
 
+  .xl\:min-h-lateral {
+    min-height: 1200px;
+  }
+
   .xl\:min-w-0 {
     min-width: 0px;
   }
@@ -154601,6 +154643,10 @@ video {
 
   .xl\:w-articles {
     width: 860px;
+  }
+
+  .xl\:w-asideBox {
+    width: 85%;
   }
 
   .xl\:z-0 {
@@ -172728,6 +172774,10 @@ video {
     min-height: 100vh;
   }
 
+  .\32xl\:min-h-lateral {
+    min-height: 1200px;
+  }
+
   .\32xl\:min-w-0 {
     min-width: 0px;
   }
@@ -186049,6 +186099,10 @@ video {
 
   .\32xl\:w-articles {
     width: 860px;
+  }
+
+  .\32xl\:w-asideBox {
+    width: 85%;
   }
 
   .\32xl\:z-0 {

@@ -71,7 +71,8 @@ module.exports = {
           },
           width: {
             'wrapper':'1250px',
-            'articles':'860px'
+            'articles':'860px',
+            'asideBox':'85%'
           },
           margin: {
             'wrapper':'0px auto',
@@ -82,8 +83,14 @@ module.exports = {
             'h3': '45px',
             'blog':'100px'
           },
-          MinHeight: {
+          minHeight: {
             'lateral': '1200px',
+          },
+          marginLeft: {
+            'overlay': '70px'
+          },
+          marginTop: {
+            'overlayNeg':'-52px'
           }
       },
     },
