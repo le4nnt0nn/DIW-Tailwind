@@ -172,6 +172,11 @@
     mr-0
   }
 
+  .icon {
+    @apply
+    font-symbols
+  }
+
   .card .icon {
     transition-duration: 300ms;
     @apply
@@ -266,7 +271,7 @@
     m-3
     bg-white
     rounded-md
-    shadow-md
+    shadow-md inset-2
   }
 
   .lateral input[type="text"] {
@@ -473,6 +478,13 @@
     bg-white
     text-black
     shadow-md
+  }
+
+  .articles article h4 {
+    @apply
+    block
+    text-2xl
+    m-0.5
   }
 
   .articles article h4 a {
