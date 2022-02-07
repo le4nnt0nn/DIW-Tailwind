@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo de Tailwind</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <!--<link rel="stylesheet" href="./src/responsive.css">-->
 </head>
 
 <body class="bg-pattern font-bebas">
     <!--Header-->
-    <header class="w-full h-header bg-black text-white">
-        <div class="w-wrapper m-wrapper">
+    <header class="header">
+        <div class="w-11/12 724:text-center">
             <div class="logo">
                 <span class="gear">S</span>
                 <h3>BLOG</h3>
@@ -29,17 +28,17 @@
         </div>
     </header>
 
-    <div class="w-wrapper m-auto wrap">
+    <div class="container w-11/12 m-auto"><!--container-->
         <!--Banner-->
         <div
             class="banner bg-banner animate-backBannerBan">
             <h1
-                class="block w-11/12 font-bebas text-white font-normal tracking-wide drop-shadow-md shadow-black m-7 text-5xl animate-showTextBan">
+                class="block font-bebas text-white font-normal tracking-wide drop-shadow-md shadow-black m-7 text-5xl animate-showTextBan">
                 CURSOS DE DESARROLLO WEB</h1>
         </div>
 
         <!--Cards-->
-        <div class="cards">
+        <div class="container cards">
 
             <div class="card">
                 <p class="icon font-symbols">H</p>
@@ -144,7 +143,7 @@
         <!--Fin Barra lateral-->
 
         <!--Inicio Articulos-->
-        <div class="articles">
+        <div class="container m-auto articles">
             <h2>Últimos artículos</h2>
             <div class="clearfix"></div>
             <article>
@@ -250,7 +249,7 @@
     <!--Inicio PIE DE PÁGINA-->
     <div class="clearfix"></div>
     <footer class="footer">
-        <div class="w-wrapper m-auto wrap">
+        <div class="container w-11/12 m-auto wrap">
 
             <div class="menu_footer">
                 <h5>MENÚ</h5>

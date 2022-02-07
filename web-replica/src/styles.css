@@ -119,7 +119,7 @@
     background: url("../img/bakbaner.png");
     @apply
     overflow-hidden
-    w-full
+    w-banner
     h-28
     border-4
     shadow-md
@@ -485,18 +485,21 @@
     bg-white
     shadow-md
     m-0
+    mr-auto
     mt-5
     mb-4
+    pt-5
   }
 
   .articles article {
     font-family: "TrebuchetMS";
     @apply
-    w-full
+    w-article
     h-auto
     border-2
     border-white
     m-10
+    mr-auto
     p-2
     bg-white
     text-black
@@ -506,6 +509,7 @@
   .articles article h4 {
     @apply
     block
+    font-bold
     text-2xl
     m-0.5
   }
@@ -549,6 +553,7 @@
   .blog {
     transition-duration: 1s;
     @apply
+    w-3/5
     p-10
     h-24
     mt-16
@@ -596,7 +601,6 @@
     font-family: "TrebuchetMS";
     @apply
     float-left
-    w-80
     h-96
     m-10
     text-center
@@ -657,7 +661,7 @@
 
   .footer iframe {
     @apply
-    w-full
+    w-11/12
     h-72
     mt-2
     rounded-md
@@ -689,6 +693,7 @@
     @apply
     1250:w-full
     1250:text-4xl
+    3000:text-center
     1250:text-center
     1250:m-8
   }
@@ -714,7 +719,7 @@
 
   .articles article {
     @apply
-    1250:w-full
+    1250:w-article
   }
 
   .footer .wrap > div {
@@ -849,6 +854,11 @@
     799:max-w-full
   }
 
+  .header-group {
+    @apply
+    724:text-center
+  }
+
   .header {
     @apply
     724:w-full
@@ -857,6 +867,7 @@
 
   .logo {
     @apply
+    724:text-center
     724:float-none
     724:w-52
     724:m-0
@@ -960,7 +971,7 @@
   .menu ul li a:hover {
     @apply
     475:text-azulLogo
-    475:transform scale-100
+    475:transform scale-125
   }
 
   .banner {
@@ -991,6 +1002,11 @@
   .card .category {
     @apply
     475:text-sm
+  }
+
+  article {
+    @apply
+    475:w-2/5
   }
 
   .articles .data {

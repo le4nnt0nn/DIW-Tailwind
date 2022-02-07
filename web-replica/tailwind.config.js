@@ -2,6 +2,7 @@ module.exports = {
     theme: {
       extend: {
           screens: {
+            '3000':{'max':'3000px'},
             '1250':{'max':'1250px'},
             '1080':{'max':'1080px'},
             '970':{'max':'970px'},
@@ -86,11 +87,13 @@ module.exports = {
             'headerRespons':'120px'
           },
           width: {
-            'wrapper':'1250px',
-            'articles':'860px',
+            'wrapper':'80%',
+            'articles':'65%',
+            'article':'97%',
             'asideBox':'85%',
             'menuRespons':'440px',
-            'bannerH1':'850px'
+            'bannerH1':'850px',
+            'banner':'95.5%'
           },
           margin: {
             'wrapper':'0px auto',
