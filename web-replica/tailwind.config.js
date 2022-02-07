@@ -1,6 +1,21 @@
 module.exports = {
     theme: {
       extend: {
+          screens: {
+            '1250':{'max':'1250px'},
+            '1080':{'max':'1080px'},
+            '970':{'max':'970px'},
+            '925':{'max':'925px'},
+            '899':{'max':'899px'},
+            '799':{'max':'799px'},
+            '724':{'max':'724px'},
+            '660':{'max':'660px'},
+            '475':{'max':'475px'},
+            'xl':{'max':'1280px'},
+            'lg':{'max':'1024px'},
+            'md':{'max':'768px'},
+            'sm':{'max':'600px'}
+          },
           keyframes: {
             fromBellow: {
               '0%, 100%': { transform: 'translateY(0%)'},
@@ -61,21 +76,25 @@ module.exports = {
             bebas: ['BebasNeue'],
           },
           colors: {
-            'azul-logo':'#37bcf9',
-            'azul-category': '00538c',
-            'hover-logo':'#ccc',
+            'azulLogo':'#37bcf9',
+            'azulCategory': '00538c',
+            'hoverLogo':'#ccc',
           },
           height: {
             'header':'70px',
-            'footerWrap':'370px'
+            'footerWrap':'370px',
+            'headerRespons':'120px'
           },
           width: {
             'wrapper':'1250px',
             'articles':'860px',
-            'asideBox':'85%'
+            'asideBox':'85%',
+            'menuRespons':'440px',
+            'bannerH1':'850px'
           },
           margin: {
             'wrapper':'0px auto',
+            'cardRespons':'1.25%'
           },
           lineHeight: {
             'menu': '70px',
@@ -85,6 +104,8 @@ module.exports = {
           },
           minHeight: {
             'lateral': '1200px',
+            'asideBoxRespons':'140px',
+            'lateralRespons':'auto'
           },
           marginLeft: {
             'overlay': '70px'
